@@ -1,5 +1,5 @@
 class Math
-  def exersise_1
+  def multiples_of_3_and_5
     (0..1000).each do |i|
       if i % 3 == 0
         suma3 += i
