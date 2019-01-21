@@ -1,14 +1,18 @@
 require './maths'
 
-sums = Maths.new.multiples_of_3_and_5(1000)
+math = Maths.new
+sums = math.multiples_of_3_and_5(1000)
 
-puts 'quiere ver la suma de los multiplos de 5 o 3:'
+puts 'Quiere ver la suma de los multiplos de 5 o 3:'
 suma = gets.chomp.to_i
 
 if suma == 5
-  puts "la suma de los multiplos de 5 es: #{sums[1]}"
+  puts "La suma de los multiplos de 5 es: #{sums[1]}"
 elsif suma == 3
-  puts "la suma de los multiplos de 3 es: #{sums[0]}"
+  puts "La suma de los multiplos de 3 es: #{sums[0]}"
 else
-  puts 'esa opcion no esta disponible'
+  puts 'Esa opcion no esta disponible'
 end
+
+sum = math.even_fibonacci_sum
+puts "La suma de los pares del fibonacci #{sum}"

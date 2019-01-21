@@ -10,4 +10,18 @@ class Maths
     end 
     return sum3, sum5 
   end
+
+  def even_fibonacci_sum
+    a = 1
+    b = 2
+    sum = 2
+    c = 0
+    while c <= 4000000
+      c = a + b
+      a = b
+      b = c
+      sum += c if c.even?
+    end
+    return sum
+  end
 end
