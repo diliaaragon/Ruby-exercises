@@ -5,8 +5,7 @@ class Math
         suma3 += i
       elsif i % 5 == 0
         suma5 += i
-      end
-      
+      end  
     end 
     
     print " quiere ver la suma de los multiplos de 5 o 3: "
