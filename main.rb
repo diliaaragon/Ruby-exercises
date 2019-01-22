@@ -17,5 +17,5 @@ end
 sum = math.even_fibonacci_sum(4000000)
 puts "La suma de los pares del fibonacci #{sum}"
 
-largest_prime = math.largest_prime_factor
+largest_prime = math.largest_prime_factor(600851475143)
 puts  " the prime largest is #{largest_prime}"

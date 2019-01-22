@@ -23,16 +23,26 @@ class Maths
     return sum
   end
 
-  def largest_prime_factor
-    arr =[]
-    y = 600851475143
-    x = Math.sqrt(y)
+  def largest_prime_factor(num)
+    num_prime = []
+    i = 2
 
-   2..y do |i|
-     if x % i == 0
-       arr << is_prime?(i)
-     end   
-   end
-   return arr.max
+    while i <= Math.sqrt(num)
+      if num % i == 0
+        num_prime << i if is_prime?(i)
+      end
+      i += 1
+    end   
+    return num_prime
   end
-end
+
+  private
+
+  def is_prime?(x)
+    is_prime = true
+    (2..(Math.sqrt(x))).each do |i|
+      return false if x % i == 0
+    end
+    return true
+  end
+end  
