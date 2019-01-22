@@ -27,11 +27,10 @@ class Maths
     num_prime = 0
     i = 2
 
-    while i <= Math.sqrt(num)
+    (2..Math.sqrt(num)).each do |i|
       if num % i == 0
         num_prime = i if is_prime?(i)
       end
-      i += 1
     end   
     return num_prime
   end
