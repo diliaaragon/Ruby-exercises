@@ -19,3 +19,6 @@ puts "The sum of the even numbers of fibonacci: #{sum}"
 
 prime_largest = math.largest_prime_factor(600851475143)
 puts "The largest prime #{prime_largest}"
+
+palindrome = math.palindrome_of_numbers
+puts "largets palindrome product is #{palindrome}"
