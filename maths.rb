@@ -24,12 +24,12 @@ class Maths
   end
 
   def largest_prime_factor(num)
-    num_prime = []
+    num_prime = 0
     i = 2
 
     while i <= Math.sqrt(num)
       if num % i == 0
-        num_prime << i if is_prime?(i)
+        num_prime = i if is_prime?(i)
       end
       i += 1
     end   
