@@ -50,8 +50,8 @@ class Maths
 
   def sum_factorial(num)
     sum = 1
-      (1..num).each do |i|
-      sum *= i
+    (2..num).each do |i|
+     sum *= i
     end 
     return sum 
   end

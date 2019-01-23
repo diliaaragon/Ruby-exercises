@@ -23,7 +23,7 @@ puts "The largest prime #{prime_largest}"
 palindrome = math.palindrome_of_numbers
 puts "largets palindrome product is #{palindrome}"
 
-puts "Type a number:"
+puts 'Type a number:'
 num = gets.chomp.to_i
 
 sum_factorial = math.sum_factorial(num)
