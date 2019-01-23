@@ -14,5 +14,5 @@ else
   puts 'Esa opcion no esta disponible'
 end
 
-sum = math.even_fibonacci_sum
+sum = math.even_fibonacci_sum(4000000)
 puts "La suma de los pares del fibonacci #{sum}"
