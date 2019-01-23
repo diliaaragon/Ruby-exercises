@@ -1,7 +1,7 @@
 require './maths'
 
-puts "write your word: "
+puts "Write your word:"
 word = gets.chomp
 palindrome_word = Maths.new.palindrome_word(word)
-puts " the word is not palindrome " if palindrome_word == false
-puts "the word is palindrome " if palindrome_word == true
+puts "The word is not palindrome" if palindrome_word == false
+puts "The word is palindrome" if palindrome_word == true
