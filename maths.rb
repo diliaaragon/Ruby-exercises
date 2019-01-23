@@ -48,6 +48,14 @@ class Maths
     return palindrome
   end
 
+  def sum_factorial(num)
+    sum = 1
+      (1..num).each do |i|
+      sum *= i
+    end 
+    return sum 
+  end
+
   private
 
   def is_prime?(x)
