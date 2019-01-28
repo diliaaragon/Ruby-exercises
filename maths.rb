@@ -37,16 +37,16 @@ class Maths
 
   def palindrome_of_numbers
     palindrome = 0
-     (100..999).each do |i|
-       (100..999).each do |j|
-         num = i * j
-         if (num.to_s.reverse == num.to_s) && (num > palindrome)
-           palindrome = num.to_i
-         end
-       end
-     end
-     return palindrome
-   end
+    (100..999).each do |i|
+      (100..999).each do |j|
+        num = i * j
+        if (num.to_s.reverse == num.to_s) && (num > palindrome)
+          palindrome = num.to_i
+        end
+      end
+    end
+    return palindrome
+  end
 
   private
 
