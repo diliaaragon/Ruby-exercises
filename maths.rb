@@ -22,4 +22,25 @@ class Maths
     end
     return sum
   end
-end
+
+  def largest_prime_factor(num)
+    num_prime = 0
+    i = 2
+
+    (2..Math.sqrt(num)).each do |i|
+      if num % i == 0
+        num_prime = i if is_prime?(i)
+      end
+    end   
+    return num_prime
+  end
+
+  private
+
+  def is_prime?(x)
+    (2..(Math.sqrt(x))).each do |i|
+      return false if x % i == 0
+    end
+    return true
+  end
+end  
